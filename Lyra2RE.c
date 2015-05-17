@@ -38,7 +38,7 @@
 #include "sha3/sph_skein.h"
 #include "Lyra2.h"
 
-void lyra2re_hash(const char* input, char* output)
+void lyra2re_hash(const char* input, char* output, uint32_t len)
 {
     sph_blake256_context     ctx_blake;
     sph_groestl256_context   ctx_groestl;
