@@ -36,7 +36,7 @@
 #include "sha3/sph_groestl.h"
 #include "sha3/sph_keccak.h"
 #include "sha3/sph_skein.h"
-#include "sha3/Lyra2.h"
+#include "Lyra2.h"
 
 void lyra2re_hash(const char* input, char* output)
 {
