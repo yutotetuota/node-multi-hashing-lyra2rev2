@@ -615,7 +615,7 @@ Handle<Value> lyra2re(const Arguments& args) {
 
     uint32_t input_len = Buffer::Length(target);
 
-    lyra2re_hash(input, output, input_len);
+    lyra2re_hash(input, output);
 
     Buffer* buff = Buffer::New(output, 32);
     return scope.Close(buff->handle_);
