@@ -25,7 +25,6 @@ extern "C" {
     #include "whirlpoolx.h"
     #include "fresh.h"
     #include "Lyra2RE.h"
-    #include "Lyra2.h"
     #include "zr5.h"
 }
 
