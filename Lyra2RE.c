@@ -32,13 +32,13 @@
 #include <stdint.h>
 #include <string.h>
 #include <stdio.h>
-#include "vtc_lyra2re/sph_blake.h"
-#include "vtc_lyra2re/sph_groestl.h"
-#include "vtc_lyra2re/sph_keccak.h"
-#include "vtc_lyra2re/sph_skein.h"
+#include "sha3/sph_blake.h"
+#include "sha3/sph_groestl.h"
+#include "sha3/sph_keccak.h"
+#include "sha3/sph_skein.h"
 #include "Lyra2.h"
 
-void lyra2re_hash(const char* input, char* output, uint32_t len)
+void lyra2re_hash(const char* input, char* output)
 {
     sph_blake256_context     ctx_blake;
     sph_groestl256_context   ctx_groestl;
