@@ -58,6 +58,7 @@
             "include_dirs": [
                 "crypto",
                 "sha3",
+                "<!(node -e \"require('nan')\")"
             ],
             "cflags_cc": [
                 "-std=c++0x"
